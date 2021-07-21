@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+	<title>#(title)</title>
+	<script src="/assets/library/jquery.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/semantic-UI/dist/semantic.min.css">
+	<link href="/styles/style.css" rel="stylesheet">
+	<script src="/semantic-UI/dist/semantic.min.js"></script>
+
+	<script>
+		$(document)
+			.ready(function () {
+				// fix menu when passed
+				$('.masthead')
+					.visibility({
+						once: false,
+						onBottomPassed: function () {
+							$('.fixed.menu').transition('fade in');
+						},
+						onBottomPassedReverse: function () {
+							$('.fixed.menu').transition('fade out');
+						}
+					});
+
+				// create sidebar and attach to menu open
+				$('.ui.sidebar')
+					.sidebar('attach events', '.toc.item');
+
+			});
+	</script>
+</head>
+
+<body>
+	<div id="container">
+		<div id="logbox" class="column">
+			<div id="logbox-left">
+				<div style="padding:40px;">
+				<h2 class="ui header">
+					<!--<img src="assets/images/logo.png" class="image">-->
+					<div>
+						<p class="modalHeader">사용자 로그인</p>
+						<!--<p class="modalText">이메일을 등록하면, 회원가입 메일을 보내드립니다</p>-->
+					</div>
+				</h2>
+				</div>
+			</div>
+
+			<div id="logbox-right">
+				<form class="ui large form">
+					<div class="field">
+						<label>E-Mail</label>
+						<div class="ui left icon input">
+							<i class="user icon"></i>
+							<input type="text" name="email" placeholder="E-mail address">
+						</div>
+					</div>
+					<div class="field">
+						<label>Password</label>
+						<div class="ui left icon input">
+							<i class="lock icon"></i>
+							<input type="password" name="password" placeholder="Password">
+						</div>
+					</div>
+					<div class="ui fluid large blue submit button">로그인</div>
+
+					<div class="ui error mini message">
+						<div class="header">로그인 실패</div>
+						<p>이메일 혹은 비밀번호가 일치하지 않습니다. <a href="#">비밀번호 찾기</a></p>
+					</div>
+				</form>
+				<div class="ui divider"></div>
+				<div class="ui">
+					계정이 없으신가요? <a href="/app/signup">계정 신청하기</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
