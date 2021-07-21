@@ -19,6 +19,10 @@ func routes(_ app: Application) throws {
         return req.view.render("login", ["title": "login"])
     }
 
+    app.get("admin") {req in
+        return req.view.render("admin", ["title" : "admin page"])
+    }
+
     app.get("app", "signup") { req in
         return req.view.render("signup", ["title": "sign up"])
     }

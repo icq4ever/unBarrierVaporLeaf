@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+	<title>#(title)</title>
+	<script src="/assets/library/jquery.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/semantic-UI/dist/semantic.min.css">
+	<link href="/styles/style.css" rel="stylesheet">
+	<script src="/semantic-UI/dist/semantic.min.js"></script>
+
+	<script>
+		$(document)
+			.ready(function () {
+				// fix menu when passed
+				$('.masthead')
+					.visibility({
+						once: false,
+						onBottomPassed: function () {
+							$('.fixed.menu').transition('fade in');
+						},
+						onBottomPassedReverse: function () {
+							$('.fixed.menu').transition('fade out');
+						}
+					});
+
+				// create sidebar and attach to menu open
+				$('.ui.sidebar')
+					.sidebar('attach events', '.toc.item');
+
+			});
+	</script>
+</head>
+
+<body>
+	<!-- Following Menu -->
+	<div class="ui inverted attached stackable menu">
+		<div class="ui container">
+			<a class="active item">Status</a>
+			<a class="item">Settings</a>
+			<a class="item">Labels</a>
+			<a class="item">Training</a>
+			<div class="right menu">
+				<a class="ui item" href="#">Hello, User!</a>
+				<a class="ui item" href="#">Logout</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Sidebar Menu -->
+	<div class="ui vertical inverted sidebar menu left">
+		<a class="active item">Home</a>
+		<a class="item">Work</a>
+		<a class="item">Company</a>
+		<a class="item">Careers</a>
+		<a class="item">Login</a>
+		<a class="item">Signup</a>
+	</div>
+
+
+	<!-- Page Contents -->
+	<div class="pusher">
+		<div class="ui tabular menu container ">
+			<a class="active item"> KSL </a>
+			<a class="item"> ALS </a>
+			<a class="item"> CSL </a>
+			<a class="item"> JSL </a>
+			<a class="item"> BSL </a>
+		</div>
+
+		<h2 class="ui dividing header container">Summary</h2>
+		<div class="ui container">
+				<div class="ui stackable  equal height stackable grid">
+					<div class="eight wide column">
+						<div class="ui horizontal column">
+							<p> KSL</p>
+						</div>
+					</div>
+					<div class="eight wide column">
+						<div class="ui horizontal ">
+							<h3 class="ui header">Record history</h4>
+								<p> KSL </p>
+						</div>
+					</div>
+				</div>
+		</div>
+
+		<h2 class="ui dividing header container">List</h2>
+		<div class="ui container">
+				<table class="ui compact table">
+					<thead>
+						<tr>
+							<th class="wide">ID</th>
+							<th class="two wide">Label</th>
+							<th class="two wide">Description</th>
+							<th class="wide">Var</th>
+							<th class="wide">Participant Count</th>
+							<th class="six wide">Participant Age Range</th>
+							<th class="six wide">Clip Count</th>
+							<th class="two wide">% of Validation</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-label="ID">1</td>
+							<td data-label="Label"><a href="#">안녕하세요</a></td>
+							<td data-label="Description">-</td>
+							<td data-label="Var">1</td>
+							<td data-label="Participant Count">52</td>
+							<td data-label="Participant Age Range"></td>
+							<td data-label="Clip Count">1250</td>
+							<td data-label="Percentage of Validation">56% (700)</td>
+						</tr>
+						<tr>
+							<td data-label="ID">2</td>
+							<td data-label="Label">차</td>
+							<td data-label="Description">음료</td>
+							<td data-label="Var">1</td>
+							<td data-label="Participant Count">21</td>
+							<td data-label="Participant Age Range"></td>
+							<td data-label="Clip Count">120</td>
+							<td data-label="Percentage of Validation"></td>
+						</tr>
+					</tbody>
+				</table>
+		</div>
+	</div>
+
+	<div class="ui inverted vertical footer segment">
+		<div class="ui container">
+			<div class="ui stackable inverted divided equal height stackable grid">
+				<div class="three wide column">
+					<h4 class="ui inverted header">About</h4>
+					<div class="ui inverted link list">
+						<a href="#" class="item">Sitemap</a>
+						<a href="#" class="item">Contact Us</a>
+						<a href="#" class="item">Religious Ceremonies</a>
+						<a href="#" class="item">Gazebo Plans</a>
+					</div>
+				</div>
+				<div class="three wide column">
+					<h4 class="ui inverted header">Services</h4>
+					<div class="ui inverted link list">
+						<a href="#" class="item">Banana Pre-Order</a>
+						<a href="#" class="item">DNA FAQ</a>
+						<a href="#" class="item">How To Access</a>
+						<a href="#" class="item">Favorite X-Men</a>
+					</div>
+				</div>
+				<div class="seven wide column">
+					<h4 class="ui inverted header">Footer Header</h4>
+					<p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+</body>
+
+</html>

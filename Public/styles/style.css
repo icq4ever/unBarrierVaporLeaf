@@ -5,7 +5,13 @@
 body {
 	padding:0;
 	margin:0;
+	background:#fff;
 }
+
+body.pushable{
+	background:#FFF !important;
+}
+
 .hidden.menu {
 	display: none;
 }
