@@ -12,6 +12,10 @@ body.pushable{
 	background:#FFF !important;
 }
 
+.pusher{
+	padding:20px 0 80px;
+}
+
 .hidden.menu {
 	display: none;
 }
@@ -64,6 +68,10 @@ body.pushable{
 
 .ui.vertical.stripe .horizontal.divider {
 	margin: 3em 0em;
+}
+
+.ui.table thead th{
+	vertical-align:top;
 }
 
 .quote.stripe.segment {
@@ -134,4 +142,21 @@ body.pushable{
 .modalText {
 	color:#555;
 	font-size:1.2em;
+}
+
+
+.validatePlusPlus{
+	background-color:#26baff;
+}
+
+.validatePlus{
+	background-color:#95e078;
+}
+
+.validateNormal{
+	background-color:#96d9f8;
+}
+
+.validateNone{
+	background-color:#dbdbdb;
 }

@@ -37,6 +37,7 @@
 </head>
 
 <body>
+
 	<!-- Following Menu -->
 	<div class="ui inverted attached stackable menu">
 		<div class="ui container">
@@ -74,59 +75,59 @@
 
 		<h2 class="ui dividing header container">Summary</h2>
 		<div class="ui container">
-				<div class="ui stackable  equal height stackable grid">
-					<div class="eight wide column">
-						<div class="ui horizontal column">
-							<p> KSL</p>
-						</div>
-					</div>
-					<div class="eight wide column">
-						<div class="ui horizontal ">
-							<h3 class="ui header">Record history</h4>
-								<p> KSL </p>
-						</div>
+			<div class="ui stackable  equal height stackable grid">
+				<div class="eight wide column">
+					<div class="ui horizontal column">
+						<p> KSL</p>
 					</div>
 				</div>
+				<div class="eight wide column">
+					<div class="ui horizontal ">
+						<h3 class="ui header">Record history</h4>
+							<p> KSL </p>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<h2 class="ui dividing header container">List</h2>
 		<div class="ui container">
-				<table class="ui compact table">
-					<thead>
-						<tr>
-							<th class="wide">ID</th>
-							<th class="two wide">Label</th>
-							<th class="two wide">Description</th>
-							<th class="wide">Var</th>
-							<th class="wide">Participant Count</th>
-							<th class="six wide">Participant Age Range</th>
-							<th class="six wide">Clip Count</th>
-							<th class="two wide">% of Validation</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td data-label="ID">1</td>
-							<td data-label="Label"><a href="#">안녕하세요</a></td>
-							<td data-label="Description">-</td>
-							<td data-label="Var">1</td>
-							<td data-label="Participant Count">52</td>
-							<td data-label="Participant Age Range"></td>
-							<td data-label="Clip Count">1250</td>
-							<td data-label="Percentage of Validation">56% (700)</td>
-						</tr>
-						<tr>
-							<td data-label="ID">2</td>
-							<td data-label="Label">차</td>
-							<td data-label="Description">음료</td>
-							<td data-label="Var">1</td>
-							<td data-label="Participant Count">21</td>
-							<td data-label="Participant Age Range"></td>
-							<td data-label="Clip Count">120</td>
-							<td data-label="Percentage of Validation"></td>
-						</tr>
-					</tbody>
-				</table>
+			<table class="ui compact table">
+				<thead>
+					<tr>
+						<th class="wide">ID</th>
+						<th class="two wide">Label</th>
+						<th class="two wide">Description</th>
+						<th class="wide">Var</th>
+						<th class="wide">Participant Count</th>
+						<th class="six wide">Participant Age Range</th>
+						<th class="six wide">Clip Count</th>
+						<th class="two wide">% of Validation</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-label="ID">1</td>
+						<td data-label="Label"><a href="#">안녕하세요</a></td>
+						<td data-label="Description">-</td>
+						<td data-label="Var">1</td>
+						<td data-label="Participant Count">52</td>
+						<td data-label="Participant Age Range"></td>
+						<td data-label="Clip Count">1250</td>
+						<td data-label="Percentage of Validation">56% (700)</td>
+					</tr>
+					<tr>
+						<td data-label="ID">2</td>
+						<td data-label="Label">차</td>
+						<td data-label="Description">음료</td>
+						<td data-label="Var">1</td>
+						<td data-label="Participant Count">21</td>
+						<td data-label="Participant Age Range"></td>
+						<td data-label="Clip Count">120</td>
+						<td data-label="Percentage of Validation"></td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 
@@ -157,7 +158,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 
 </body>
